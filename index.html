@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agis - Portfólio</title>
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botão de alternância de tema -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-switch-label">
+            <span class="theme-switch-inner"></span>
+        </label>
+    </div>
+
+    <!-- Animação de saudações -->
+    <div id="greeting">Olá</div>
+    <div id="main-content" class="scroll-container" style="display: none;">
+        <!-- Seção inicial -->
+        <section class="section" style="background-color: #f3f3f3;">
+            <img src="images/agislogo.png" alt="Logo da AGIS">
+        </section>
+
+        <!-- Seção "Sobre Nós" -->
+        <section class="section about-section">
+            <div>
+                <h2>Sobre nós</h2>
+                <p>A AGIS é uma empresa de consultoria em saúde pública que tem como objetivo auxiliar gestores públicos a melhorar a qualidade dos serviços de saúde prestados à população.</p>
+            </div>
+        </section>
+
+        <!-- Seção "Serviços" -->
+        <section class="section services-section">
+            <h2>Serviços</h2>
+            <div class="service">
+                <h3>Consultoria em Gestão</h3>
+                <p>Oferecemos consultoria especializada para ajudar gestores a otimizarem seus processos de gestão em saúde pública.</p>
+            </div>
+            <div class="service">
+                <h3>Inovação em Saúde</h3>
+                <p>Implementamos soluções inovadoras para melhorar a eficiência e qualidade dos serviços de saúde.</p>
+            </div>
+            <div class="service">
+                <h3>Treinamentos</h3>
+                <p>Oferecemos treinamentos para capacitar profissionais de saúde em novas tecnologias e melhores práticas de gestão.</p>
+            </div>
+        </section>
+
+        <!-- Seção "Equipe" -->
+        <section class="section team-section">
+            <h2>Fundador</h2>
+            <div class="team-member">
+                <img src="images/matheus.png" alt="Membro da Equipe">
+                <h3>Matheus Massia Vieira</h3>
+                <p>Consultor de Gestão e Inovação em Saúde</p>
+            </div>
+        </section>
+
+        <!-- Seção da linha do tempo -->
+        <section class="section timeline-section">
+            <h2>Linha do Tempo</h2>
+            <div id="timeline-embed" style="width: 100%; height: 600px;"></div>
+        </section>
+    </div>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
